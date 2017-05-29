@@ -7,3 +7,22 @@ http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/rel
 ## Télécharger le JDK 8
 
 http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
+
+## Configuration proxy pour settings.xml
+
+```
+<settings>
+  <proxies>
+     <proxy>
+        <id>example-proxy</id>
+        <active>true</active>
+        <protocol>http</protocol>
+        <username>tomcat</username>
+        <password>tomcat</password>
+        <host>proxy.example.com</host>
+        <port>8008</port>
+        <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+     </proxy>
+  </proxies>
+</settings>
+```
