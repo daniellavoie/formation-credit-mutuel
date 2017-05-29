@@ -26,3 +26,15 @@ http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-213315
   </proxies>
 </settings>
 ```
+## Plugin maven de packaging
+
+```
+  <build>
+    <plugins>
+      <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+```
