@@ -1,11 +1,8 @@
-package ei.formation.atelier0.product;
+	package ei.formation.atelier0.product;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductRepository {
-	void delete(String name);
-	
-	List<Product> findAll();
-	
-	Product save(Product product);
+public interface ProductRepository 
+	extends JpaRepository<Product, String>{
+
 }

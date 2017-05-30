@@ -2,6 +2,7 @@ package ei.formation.atelier0.product;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,8 +25,8 @@ public class ProductController {
 	}
 
 	@GetMapping
-	public List<Product> findAll() {
-		return productService.findAll();
+	public List<Product> findAll(Pageable pageable) {
+		return productService.findAll(pageable).getContent();
 	}
 
 	@GetMapping(params = "name")

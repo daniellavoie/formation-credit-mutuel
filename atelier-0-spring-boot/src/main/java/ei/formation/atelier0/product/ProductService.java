@@ -1,11 +1,12 @@
 package ei.formation.atelier0.product;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface ProductService {
 	void delete(String name);
 	
-	List<Product> findAll();
+	Page<Product> findAll(Pageable pageable);
 	
 	Product save(Product product);
 }
