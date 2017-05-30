@@ -38,3 +38,19 @@ http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-213315
     </plugins>
   </build>
 ```
+
+## Dependency management Spring Cloud
+
+```
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-dependencies</artifactId>
+      <version>Camden.RELEASE</version>
+      <type>pom</type>
+      <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+```
